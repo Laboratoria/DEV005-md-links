@@ -1,5 +1,4 @@
-const validatePath = require('./purefunction');
-
+const validatePath = require('./functions');
 // Invoke
 const mdLinks = (path, option) => new Promise((resolve, reject) => {
   const resultPath = validatePath(path);
