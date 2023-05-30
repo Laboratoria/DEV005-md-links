@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-shadow */
 const path = require('path');
 const fs = require('fs');
 
-// const pathUser = process.argv[2];
+const pathUser = process.argv[2];
 // Funciones puras que le diran que hacer al programa
 // Paso a paso del Flujo / Step by Step with Flow
 // La Ruta existe? / it Path exist?
@@ -18,6 +20,7 @@ const validatePath = (pathUser) => {
 };
 
 // Es un directorio? / its a Directory?
+// eslint-disable-next-line consistent-return
 const isAdirectory = (pathUser) => {
   if (fs.statSync(pathUser).isDirectory()) {
     return path.resolve(pathUser);
