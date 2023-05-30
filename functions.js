@@ -26,23 +26,23 @@ const isAdirectory = (pathUser) => {
 
 // Leer Directorio y Generar array de subDirectorios y archivos MD
 const readDirectory = (pathUser) => {
-  const allMd = [];
+  const allPathMd = [];
   let subDirectories = [];
   const allDirectory = fs.readdirSync(pathUser);
   allDirectory.forEach((file) => {
     if (file !== 'node_modules' && file !== '.git') {
       const newFile = path.resolve(pathUser, file);
       if (path.extname(newFile) === '.md') {
-        allMd.push(newFile);
+        allPathMd.push(newFile);
       } else if (fs.statSync(newFile).isDirectory()) {
         subDirectories = readDirectory(newFile);
         if (subDirectories.length > 0) {
-          allMd.push(...subDirectories);
+          allPathMd.push(...subDirectories);
         }
       }
     }
   });
-  return allMd;
+  return allPathMd;
 };
 // console.log(readDirectory('./prueba_MD'));
 
