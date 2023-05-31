@@ -1,0 +1,7 @@
+### Planificación
+
+En este proyecto te recomendamos usar la herramienta de planificación
+y organización de GitHub llamada **Github Projects**.
+
+Mediante **issues** y **milestones** podrás organizar y planificar
+tareas y objetivos concretos.
