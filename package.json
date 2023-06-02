@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "md-lunin-links",
   "version": "0.1.0",
   "engines": {
     "node": ">=16.x"
@@ -11,6 +11,9 @@
   },
   "scripts": {
     "test": "jest --coverage"
+  },
+  "bin": {
+    "mdLinks": "cli.js"
   },
   "repository": {
     "type": "git",

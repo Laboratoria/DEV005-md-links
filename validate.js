@@ -64,6 +64,7 @@ const validateMdLinks = (arrLinks) => {
 // getMdLinks(path).then((res) => validateMdLinks(res).then((responce) => console.log(responce)));
 
 module.exports = {
+  getMdLinks,
   getAllMdLinks,
   validateMdLinks,
 };

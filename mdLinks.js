@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 // const validatePath = require('./functions');
-const functions = require('../functions');
+const functions = require('./functions');
 const validated = require('./validate');
 
 // Invoke

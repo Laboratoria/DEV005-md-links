@@ -56,7 +56,3 @@ module.exports = {
   getLinksStats,
   getLinksStatsValidated,
 };
-
-// // getMdLinks(path).then((res) =>
-// validateMdLinks(res).then((getLinksStats) =>
-// console.log(getLinksStats(validateMdLinks))));

@@ -54,16 +54,4 @@ module.exports = {
   isAdirectory,
   readDirectory,
 };
-// Es un archivo.?
-// const isaFile = (pathUser) => {
-//   if (fs.statSync(pathUser).isFile()) {
-//     return true;
-//   } return 'is not a File';
-// };
-// // console.log(isaFile('./prueba_MD/isNotmd.js'));
 
-// // valida que el archivo es MD
-// const getFileMd = (pathUser) => {
-//   const fileMd = path.extname(pathUser) === '.md';
-//   return fileMd;
-// };

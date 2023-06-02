@@ -1,5 +1,5 @@
+#!/usr/bin/env node
 // Todo lo que ingresa el usuario por terminal
-// const colors = require('colors');
 const mdLinks = require('./mdLinks');
 const statsAndvalidate = require('./stats&validate');
 
