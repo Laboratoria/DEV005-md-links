@@ -88,7 +88,7 @@ describe('isAdirectory', () => {
   });
 });
 
-// // TestIng leer el directorio...
+// TestIng leer el directorio...
 describe('function readAdirectory and return arr of files with extension .md', () => {
   it('should return array with file extension .md', () => { // en caso de tener archivos .md retorna un arreglo de archivos .md
     expect(functions.readDirectory('C:\\Users\\Dell\\Desktop\\L A B _I N\\pRo_DEV005\\DEV005-md-links\\Prueba_MD')).toEqual(exampleAllMdfiles);
@@ -114,14 +114,15 @@ describe('getMdLinks', () => {
   //   expect(e.message).toBe('No se encontró el archivo, Verificar la Ruta');
   // }));
 });
+
 // TestIng Obtener array de .md Links
 describe('getAllMdLinks', () => {
   it('should be a function', () => {
     expect(typeof validated.getAllMdLinks).toBe('function');
   });
 });
+
 // TestIng Validar Links
-// jest.mock('axios');
 describe('validate', () => {
   it('should be a function', () => {
     expect(typeof validated.getMdLinks).toBe('function');
@@ -133,6 +134,7 @@ describe('validate', () => {
       });
   });
 });
+
 // jest.mock('axios');
 // beforeEach(() => {
 //   axios.get.mockClear();
@@ -155,6 +157,7 @@ describe('statsValidated', () => {
     expect(statsValidated.getLinksStats(arrLinksStatsValidate)).toEqual({ total: 2, unique: 2 });
   });
 });
+
 // TestIng Obtener array de Estadisticas de Links totales, unicos y Rotos
 describe('getLinksStatsValidated', () => {
   it('should be a function', () => {
@@ -164,4 +167,3 @@ describe('getLinksStatsValidated', () => {
     expect(statsValidated.getLinksStatsValidated(arrLinksStatsValidate)).toEqual({ total: 2, unique: 2, broken: 1 });
   });
 });
-

@@ -5,21 +5,21 @@ const fs = require('fs');
 
 const pathUser = process.argv[2];
 // Funciones puras que le diran que hacer al programa
-// Paso a paso del Flujo / Step by Step with Flow
-// La Ruta existe? / it Path exist?
+// Paso a paso del Flujo
+// La Ruta existe?
 const validatePath = (pathUser) => {
   if (!fs.existsSync(pathUser)) {
     return 'err';
   }
-  // Si existe, decirme si es Absoluta/ if exist, it Absolute?
+  // Si existe, decirme si es Absoluta
   if (path.isAbsolute(pathUser)) {
     return pathUser;
   }
-  // si existe, es Relativa then devolverla absoluta / if exist && relative, getBack Absolute
+  // si existe, es Relativa then devolverla absoluta
   return path.resolve(pathUser);
 };
 
-// Es un directorio? / its a Directory?
+// Es un directorio?
 // eslint-disable-next-line consistent-return
 const isAdirectory = (pathUser) => {
   if (fs.statSync(pathUser).isDirectory()) {
@@ -47,11 +47,9 @@ const readDirectory = (pathUser) => {
   });
   return allPathMd;
 };
-// console.log(readDirectory('./prueba_MD'));
 
 module.exports = {
   validatePath,
   isAdirectory,
   readDirectory,
 };
-

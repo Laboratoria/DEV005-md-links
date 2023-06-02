@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 // Todo lo que ingresa el usuario por terminal
 const mdLinks = require('./mdLinks');
 const statsAndvalidate = require('./stats&validate');

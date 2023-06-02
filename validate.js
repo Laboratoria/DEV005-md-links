@@ -1,8 +1,7 @@
 const fs = require('fs');
-// const path = require('path');
 const axios = require('axios');
-
 // const pathUser = process.argv[2];
+
 // Funciòn Extraer Links de un Archivo y Hacer un Array de objetos
 // eslint-disable-next-line no-shadow, no-unused-vars
 const getMdLinks = (pathMd) => new Promise((res, rej) => {
