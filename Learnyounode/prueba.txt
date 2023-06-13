@@ -1,0 +1,3 @@
+Si separatores una expresión regular con grupos de captura, cada vez que separatorcoincida, los grupos capturados (incluidos los undefinedresultados) se empalman en la matriz de salida. Este comportamiento está especificado por el Symbol.splitmétodo de la expresión regular.
+Si separatores un objeto con un Symbol.splitmétodo, ese método se llama con la cadena de destino y limitcomo argumentos, y thisse establece en el objeto. Su valor de retorno se convierte en el valor de retorno de split.
+Cualquier otro valor se coaccionará a una cadena antes de usarse como separador.
