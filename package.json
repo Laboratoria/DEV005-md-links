@@ -1,7 +1,36 @@
 {
-  "name": "md-links",
-  "version": "0.1.0",
+  "name": "md-links-laumontero",
+  "version": "0.1.1",
   "engines": {
     "node": ">=16.x"
+  },
+  "description": "* [1. Introducción](#1-introducción)\r * [2. Descripción](#2-descripción)\r * [3. Diagrama de flujo](#3-diagrama-de-flujo)\r * [4. Modo de uso](#4-mode-de.uso)\r * [5. Desplegado en NPM](#5-desplegado-en-NPM)",
+  "main": "mdlinks.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraCMonteroM/DEV005-md-links.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraCMonteroM/DEV005-md-links/issues"
+  },
+  "homepage": "https://github.com/LauraCMonteroM/DEV005-md-links#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "colors": "^1.4.0",
+    "jest": "^29.5.0",
+    "node-fetch": "^2.6.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
   }
 }
